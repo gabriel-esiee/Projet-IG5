@@ -52,6 +52,7 @@ public class Arrow : MonoBehaviour
             released = true;
             col.enabled = true;
             rb.isKinematic = false;
+            transform.parent = null;
             rb.AddForce(transform.forward * maxVelocity * strength, ForceMode.Impulse);
         }
     }
