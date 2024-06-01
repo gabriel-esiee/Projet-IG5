@@ -63,7 +63,7 @@ public class Arrow : MonoBehaviour
         rb.isKinematic = true;
         
         col.isTrigger = true;
-        transform.parent = surface.transform;
+        //transform.parent = surface.transform;
     }
 
     private void OnCollisionEnter(Collision other)
