@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
+    public delegate void CollideAction(Transform other);
+    public event CollideAction OnCollide;
+    
     [SerializeField] private float maxVelocity = 30.0f;
     [SerializeField] private float lifeTime = 10.0f;
 
@@ -35,25 +38,18 @@ public class Arrow : MonoBehaviour
             col.enabled = false;
         }
     }
-
-    private void Start()
-    {
-        Destroy(gameObject, lifeTime);
-    }
-
-    private void Update()
-    {
-    }
-
+    
     public void Release(float strength)
     {
         if (released == false)
         {
             released = true;
+            
             col.enabled = true;
             rb.isKinematic = false;
             transform.parent = null;
             rb.AddForce(transform.forward * maxVelocity * strength, ForceMode.Impulse);
+            Destroy(gameObject, lifeTime);
         }
     }
 
@@ -71,6 +67,8 @@ public class Arrow : MonoBehaviour
         if (released == true)
         {
             StickToSurface(other.collider.transform);
+            if (OnCollide != null)
+                OnCollide(other.transform);
         }
     }
 }

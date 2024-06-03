@@ -1,16 +1,18 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class BowController : MonoBehaviour
 {
     [SerializeField] private Transform bow;
-    [SerializeField] private Arrow arrow;
+    [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private LineRenderer stringRenderer;
     [SerializeField] private XRGrabInteractable stringAnchor;
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMin = 0.14f;
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMax = 0.3f;
     [SerializeField] private Vector3 arrowOffset;
 
+    private Arrow arrow;
     private Transform hand = null;
     private Vector3 anchorPosition = new Vector3();
     
@@ -18,44 +20,69 @@ public class BowController : MonoBehaviour
     {
         stringAnchor.selectEntered.AddListener(PullString);
         stringAnchor.selectExited.AddListener(ReleaseString);
-        Reload();
+        
+        Reload(0.0f);
     }
     
     private void Update()
     {
-        if (hand != null) // If the hand hold the string, the string should follow.
+        if(hand != null)
         {
-            Vector3 handLocalPosition = stringAnchor.transform.parent.InverseTransformPoint(hand.position);
-            anchorPosition = new Vector3(0.0f, 0.0f, handLocalPosition.z);
+            anchorPosition = stringRenderer.transform.InverseTransformPoint(stringAnchor.transform.position);
+            // Apply constraints to the string.
+            anchorPosition.x = 0.0f;
+            anchorPosition.y = 0.0f;
+            anchorPosition.z = Mathf.Clamp(anchorPosition.z, -stringStretchMax, -stringStretchMin);
+
+            stringRenderer.SetPosition(1, anchorPosition);
+            arrow.transform.localPosition = anchorPosition + arrowOffset;
         }
-
-        anchorPosition.z = Mathf.Clamp(anchorPosition.z, -stringStretchMax, -stringStretchMin); // Apply constraints to the string.
-        
-        stringRenderer.SetPosition(1, anchorPosition);
-        arrow.transform.localPosition = anchorPosition + arrowOffset;
     }
-
-    public void Reload()
-    {
-        arrow.transform.parent = stringAnchor.transform.parent;
-        arrow.transform.localPosition = arrowOffset;
-        arrow.transform.localRotation = Quaternion.identity;
-        // TODO : Reset arrow's state.
-    }
-
+    
     public void ReleaseString(SelectExitEventArgs arg0)
     {
         hand = null;
+        
         float strength = Mathf.Clamp01((Mathf.Abs(stringAnchor.transform.localPosition.z) - stringStretchMin) / stringStretchMax);
-        anchorPosition = Vector3.zero;
         Debug.Log("Throwing arrow with strength of " + strength.ToString());
+
+        anchorPosition = Vector3.zero;
+        stringRenderer.SetPosition(1, anchorPosition);
+        stringAnchor.transform.localPosition = Vector3.zero;
+
+        arrow.transform.parent = null;
         arrow.Release(strength);
+        
+        Reload(1.0f);
     }
     
     private void PullString(SelectEnterEventArgs arg0)
     {
-        hand = arg0.interactorObject.transform;
         Debug.Log("Pulling bow string.");
+        hand = arg0.interactorObject.transform;
+    }
+    
+    private void Reload(float delay)
+    {
+        StartCoroutine(ReloadCouroutine(delay));
+    }
+
+    private IEnumerator ReloadCouroutine(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        
+        GameObject go = Instantiate(arrowPrefab);
+        arrow = go.GetComponent<Arrow>();
+        arrow.OnCollide += OnArrowCollide;
+        
+        arrow.transform.parent = stringAnchor.transform.parent;
+        arrow.transform.localPosition = arrowOffset;
+        arrow.transform.localRotation = Quaternion.identity;
+    }
+
+    private void OnArrowCollide(Transform other)
+    {
+        Debug.Log("Arrow collide with " + other.name);
     }
     
 }
