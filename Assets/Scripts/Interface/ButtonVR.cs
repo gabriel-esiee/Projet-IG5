@@ -8,25 +8,24 @@ public class ButtonVR : MonoBehaviour
     public UnityEvent onRelease;
     
     [SerializeField] private GameObject button;
+    [SerializeField] private Vector3 pressedPosition, releasedPosition;
 
     private AudioSource audioSource;
     private bool isPressed = false;
     
     private Transform hand;
-    private Vector3 defaultPosition;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         onRelease.AddListener(OnReleaseButton);
-        defaultPosition = button.transform.localPosition;
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (isPressed == false)
         {
-            button.transform.localPosition = new Vector3(0.0f, 0.223f, 0.0f);
+            button.transform.localPosition = pressedPosition;
             hand = other.transform;
             onPress.Invoke();
             audioSource.Play();
@@ -38,7 +37,7 @@ public class ButtonVR : MonoBehaviour
     {
         if (other.transform == hand && isPressed == true)
         {
-            button.transform.localPosition = defaultPosition;
+            button.transform.localPosition = releasedPosition;
             hand = null;
             onRelease.Invoke();
             isPressed = false;
