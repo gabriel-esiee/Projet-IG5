@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class TargetCreator : MonoBehaviour
 {
+    [SerializeField] private int targetsCount = 10;
     [SerializeField] private List<Transform> targets = new List<Transform>();
     
     private void Start()
     {
-        ActivateRandomTargets(10);
+        ActivateRandomTargets(targetsCount);
     }
 
     private void ActivateRandomTargets(int count)
