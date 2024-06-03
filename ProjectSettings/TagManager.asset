@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Meteor
+  - Target
   layers:
   - Default
   - TransparentFX

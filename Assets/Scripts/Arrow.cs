@@ -57,16 +57,16 @@ public class Arrow : MonoBehaviour
     {
         rb.velocity = Vector3.zero;
         rb.isKinematic = true;
-        
         col.isTrigger = true;
-        //transform.parent = surface.transform;
+        transform.parent = surface.transform;
     }
 
     private void OnCollisionEnter(Collision other)
     {
-        if (released == true)
+        if (released == true && other.transform.CompareTag("Target"))
         {
             StickToSurface(other.collider.transform);
+            
             if (OnCollide != null)
                 OnCollide(other.transform);
         }

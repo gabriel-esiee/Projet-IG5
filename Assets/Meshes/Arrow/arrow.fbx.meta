@@ -1,9 +1,29 @@
 fileFormatVersion: 2
-guid: 092f77817f0cba74abbf7ebcb4c1e526
+guid: 58d9206d1e131df4d8882811a7b1b67a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: broadhead
+    second: {fileID: 2100000, guid: 1e2b06e50e7bd7f4db6831003c73efc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nock
+    second: {fileID: 2100000, guid: 6b82138120c9ac144bd219f15c80da97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shaft
+    second: {fileID: 2100000, guid: 0da079177ff423d45bdef9e2c2461c33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vane
+    second: {fileID: 2100000, guid: 64617d78782cb1442b2da629ff2896f0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
