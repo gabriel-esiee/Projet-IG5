@@ -1,4 +1,7 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Arrow : MonoBehaviour
 {
@@ -7,6 +10,11 @@ public class Arrow : MonoBehaviour
     
     [SerializeField] private float maxVelocity = 30.0f;
     [SerializeField] private float lifeTime = 10.0f;
+    [SerializeField] private List<VisualEffect> vfx;
+    public AudioSource hitAudioSource;
+    public AudioClip[] hitAudioClips;
+    public AudioSource whooshAudioSource;
+    public AudioClip[] whooshAudioClips;
 
     private Rigidbody rb;
     private Collider col;
@@ -44,7 +52,9 @@ public class Arrow : MonoBehaviour
         if (released == false)
         {
             released = true;
-            
+
+            PlayRandomWhooshSound();
+
             col.enabled = true;
             rb.isKinematic = false;
             transform.parent = null;
@@ -66,9 +76,36 @@ public class Arrow : MonoBehaviour
         if (released == true && other.transform.CompareTag("Target"))
         {
             StickToSurface(other.collider.transform);
-            
+
+            Debug.Log("IMPACT");
+
+            PlayRandomHitSound();
+
+            foreach (VisualEffect elem in vfx)
+            {
+                elem.gameObject.SetActive(true);
+                Debug.Log("Activate VFX");
+            }
+
+
             if (OnCollide != null)
                 OnCollide(other.transform);
         }
+    }
+
+    public void PlayRandomHitSound()
+    {
+        int randomIndex = Random.Range(0, hitAudioClips.Length);
+
+        hitAudioSource.clip = hitAudioClips[randomIndex];
+        hitAudioSource.Play();
+    }
+
+    public void PlayRandomWhooshSound()
+    {
+        int randomIndex = Random.Range(0, whooshAudioClips.Length);
+
+        whooshAudioSource.clip = whooshAudioClips[randomIndex];
+        whooshAudioSource.Play();
     }
 }
