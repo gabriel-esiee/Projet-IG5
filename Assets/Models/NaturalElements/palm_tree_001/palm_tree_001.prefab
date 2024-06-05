@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -48.476887
+      value: 0.74442375
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 100.2576
+      value: 0.2841531
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.512726
+      value: 4.2221055
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
         type: 3}
@@ -63,6 +63,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: palm_tree_001
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75,6 +80,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8440381006805852240}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8759750902363288551}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5253816455329964795}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1260256593716758322}
   m_SourcePrefab: {fileID: 100100000, guid: 0c135f9544ae3344fb3a3fe1d8c5807a, type: 3}
 --- !u!1 &7304810058933341783 stripped
 GameObject:
@@ -124,10 +141,79 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.64
-  m_Height: 15.35
+  m_Radius: 0.55
+  m_Height: 3.2
   m_Direction: 1
-  m_Center: {x: 0.92, y: 6.08, z: -0.43}
+  m_Center: {x: 0.48, y: 1.19, z: 0.13}
+--- !u!136 &8759750902363288551
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7304810058933341783}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.22
+  m_Height: 2.41
+  m_Direction: 1
+  m_Center: {x: 0.34, y: 2.61, z: 0.01}
+--- !u!136 &5253816455329964795
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7304810058933341783}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.13
+  m_Height: 1.39
+  m_Direction: 1
+  m_Center: {x: -0.04, y: 4.51, z: 0.02}
+--- !u!136 &1260256593716758322
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7304810058933341783}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Height: 0.43
+  m_Direction: 1
+  m_Center: {x: 0.09, y: 3.91, z: 0.01}
 --- !u!23 &9106026091390414722 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 0c135f9544ae3344fb3a3fe1d8c5807a,

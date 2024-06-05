@@ -9,7 +9,10 @@ public class PlayerData : MonoBehaviour
     [SerializeField] private int currentTargetsCount = 0;
 
     [Space, SerializeField] private TMP_Text scoreText;
-    
+    public AudioSource winLooseAudioSource;
+    public AudioClip winAudioClip;
+    public AudioClip looseAudioClip;
+
     public UnityEvent onWin;
 
     private void Start()
@@ -25,6 +28,8 @@ public class PlayerData : MonoBehaviour
         if (currentTargetsCount >= totalTargetsCount)
         {
             onWin.Invoke();
+            winLooseAudioSource.clip = winAudioClip;
+            winLooseAudioSource.Play();
         }
     }
     

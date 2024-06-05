@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Meteor
   - Target
+  - Rock
+  - Tree
+  - Terrain
+  - Water
   layers:
   - Default
   - TransparentFX

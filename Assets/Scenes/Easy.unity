@@ -137,6 +137,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_031_flipped (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6058050682565976469, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 6870615422779538223, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -368,6 +373,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_036_unity_flipped (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169903671174907767, guid: a91ad5523ff186d4f866aeca0ea6e1c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -603,6 +613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_029_unity_flipped (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162592045998738161, guid: 5188c93cab086e242953a65829a6c347,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6831464189112307787, guid: 5188c93cab086e242953a65829a6c347,
         type: 3}
@@ -850,6 +865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_032_unity_flipped (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 210534226678161099, guid: 1be0ef5e820cb9f488ee6da9df197e46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 693597700721394801, guid: 1be0ef5e820cb9f488ee6da9df197e46,
         type: 3}
@@ -1214,6 +1234,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_039_unity_flipped (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7888268068329931485, guid: af311397281c8d94a9db007ad72e0d2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1237,6 +1262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_032_unity_flipped (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 210534226678161099, guid: 1be0ef5e820cb9f488ee6da9df197e46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 693597700721394801, guid: 1be0ef5e820cb9f488ee6da9df197e46,
         type: 3}
@@ -1442,6 +1472,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_028_unity_flipped (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3177051292515153233, guid: 386528c27a6f9c747a5d6af6cf6a4fe9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1859,6 +1894,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_032_unity_flipped (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 210534226678161099, guid: 1be0ef5e820cb9f488ee6da9df197e46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 693597700721394801, guid: 1be0ef5e820cb9f488ee6da9df197e46,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -2166,6 +2206,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_031_flipped (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6058050682565976469, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 6870615422779538223, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2233,6 +2278,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_031_flipped (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058050682565976469, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6870615422779538223, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
         type: 3}
@@ -2613,6 +2663,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_039_unity_flipped (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7888268068329931485, guid: af311397281c8d94a9db007ad72e0d2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2636,6 +2691,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_031_flipped (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058050682565976469, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6870615422779538223, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
         type: 3}
@@ -3031,6 +3091,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_041_unity (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5702156959273931562, guid: 174ceb76e768437489a151a99d2dafcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3168,6 +3233,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: canyon_rock_001_unity (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7706949866349916161, guid: 778724451db3b734d8cdcdd7fd835304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3191,6 +3261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_034_unity_flipped (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618721065847470067, guid: 5a4f307cea1b67c4593976d4727d1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3394658879212875081, guid: 5a4f307cea1b67c4593976d4727d1218,
         type: 3}
@@ -3268,6 +3343,35 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1242293246}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1418039147 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7304810058933341783, guid: ba816adf424d2644fbd20f7f02f32fc2,
+    type: 3}
+  m_PrefabInstance: {fileID: 143538555042360563}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1418039148
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418039147}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Height: 0.95
+  m_Direction: 1
+  m_Center: {x: 0.44, y: 1.2, z: 0.04}
 --- !u!4 &1431669675 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7787053622970094751, guid: 14d79ec38b86eba4d87cc49d382e61e7,
@@ -3351,6 +3455,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_036_unity_flipped (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169903671174907767, guid: a91ad5523ff186d4f866aeca0ea6e1c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3867,6 +3976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_034_unity_flipped (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2618721065847470067, guid: 5a4f307cea1b67c4593976d4727d1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 3394658879212875081, guid: 5a4f307cea1b67c4593976d4727d1218,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -4293,6 +4407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_036_unity_flipped (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4169903671174907767, guid: a91ad5523ff186d4f866aeca0ea6e1c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4444,6 +4563,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_028_unity_flipped (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3177051292515153233, guid: 386528c27a6f9c747a5d6af6cf6a4fe9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4526,6 +4650,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_036_unity_flipped (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4169903671174907767, guid: a91ad5523ff186d4f866aeca0ea6e1c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4627,6 +4756,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_029_unity_flipped (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162592045998738161, guid: 5188c93cab086e242953a65829a6c347,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6831464189112307787, guid: 5188c93cab086e242953a65829a6c347,
         type: 3}
@@ -4848,6 +4982,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_028_unity_flipped (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3177051292515153233, guid: 386528c27a6f9c747a5d6af6cf6a4fe9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4871,6 +5010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_029_unity_flipped (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6162592045998738161, guid: 5188c93cab086e242953a65829a6c347,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6831464189112307787, guid: 5188c93cab086e242953a65829a6c347,
         type: 3}
@@ -4990,6 +5134,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_041_unity (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5702156959273931562, guid: 174ceb76e768437489a151a99d2dafcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5007,6 +5156,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_031_flipped (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058050682565976469, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6870615422779538223, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
         type: 3}
@@ -5195,6 +5349,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_036_unity_flipped (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4169903671174907767, guid: a91ad5523ff186d4f866aeca0ea6e1c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5212,6 +5371,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_032_unity_flipped (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 210534226678161099, guid: 1be0ef5e820cb9f488ee6da9df197e46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 693597700721394801, guid: 1be0ef5e820cb9f488ee6da9df197e46,
         type: 3}
@@ -5360,6 +5524,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_041_unity (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5702156959273931562, guid: 174ceb76e768437489a151a99d2dafcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5556,6 +5725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_034_unity_flipped (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2618721065847470067, guid: 5a4f307cea1b67c4593976d4727d1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 3394658879212875081, guid: 5a4f307cea1b67c4593976d4727d1218,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5635,6 +5809,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_034_unity_flipped (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618721065847470067, guid: 5a4f307cea1b67c4593976d4727d1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3394658879212875081, guid: 5a4f307cea1b67c4593976d4727d1218,
         type: 3}
@@ -5790,6 +5969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_041_unity (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5702156959273931562, guid: 174ceb76e768437489a151a99d2dafcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5807,6 +5991,103 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1958738793}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &143538555042360563
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7304810058933341783, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_Name
+      value: palm_tree_001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.74442375
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2841531
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.2221055
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7932024935950341357, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440381006805852240, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_Height
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440381006805852240, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440381006805852240, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440381006805852240, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8440381006805852240, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.04
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7304810058933341783, guid: ba816adf424d2644fbd20f7f02f32fc2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1418039148}
+  m_SourcePrefab: {fileID: 100100000, guid: ba816adf424d2644fbd20f7f02f32fc2, type: 3}
 --- !u!1001 &1600116994927564672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5819,6 +6100,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: canyon_rock_006_unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 3710463884077291712, guid: 70ceaa6f28b65bd4e9bf1306ae9113a7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 4050398058316792442, guid: 70ceaa6f28b65bd4e9bf1306ae9113a7,
         type: 3}
@@ -5937,6 +6223,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: canyon_rock_003_unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 9181513840330606691, guid: 2c6c74d6228493d4cb2485fd231db098,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6155,6 +6446,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_028_unity_flipped
       objectReference: {fileID: 0}
+    - target: {fileID: 3177051292515153233, guid: 386528c27a6f9c747a5d6af6cf6a4fe9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6353,6 +6649,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_029_unity_flipped
       objectReference: {fileID: 0}
+    - target: {fileID: 6162592045998738161, guid: 5188c93cab086e242953a65829a6c347,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     - target: {fileID: 6831464189112307787, guid: 5188c93cab086e242953a65829a6c347,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6420,6 +6721,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_034_unity_flipped
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618721065847470067, guid: 5a4f307cea1b67c4593976d4727d1218,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 3394658879212875081, guid: 5a4f307cea1b67c4593976d4727d1218,
         type: 3}
@@ -6539,6 +6845,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_036_unity_flipped
       objectReference: {fileID: 0}
+    - target: {fileID: 4169903671174907767, guid: a91ad5523ff186d4f866aeca0ea6e1c7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6606,6 +6917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: canyon_rock_005_unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7630718039453565820, guid: 5c914ee36b3194b40a4455e9d378d288,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6675,6 +6991,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_041_unity
       objectReference: {fileID: 0}
+    - target: {fileID: 5702156959273931562, guid: 174ceb76e768437489a151a99d2dafcc,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6692,6 +7013,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_032_unity_flipped
+      objectReference: {fileID: 0}
+    - target: {fileID: 210534226678161099, guid: 1be0ef5e820cb9f488ee6da9df197e46,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 693597700721394801, guid: 1be0ef5e820cb9f488ee6da9df197e46,
         type: 3}
@@ -6760,6 +7086,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: small_rock_031_flipped
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058050682565976469, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     - target: {fileID: 6870615422779538223, guid: f8d8d8eae97106545aa4ed1ef689ad4f,
         type: 3}
@@ -6879,6 +7210,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: small_rock_039_unity_flipped
       objectReference: {fileID: 0}
+    - target: {fileID: 7888268068329931485, guid: af311397281c8d94a9db007ad72e0d2d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6946,6 +7282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: canyon_rock_001_unity
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706949866349916161, guid: 778724451db3b734d8cdcdd7fd835304,
+        type: 3}
+      propertyPath: m_TagString
+      value: Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7193,3 +7534,4 @@ SceneRoots:
   - {fileID: 1774343758}
   - {fileID: 377472404}
   - {fileID: 1286470985}
+  - {fileID: 143538555042360563}

@@ -64,7 +64,7 @@ Material:
     - _Smoothness: 1
     - _Strength: 0.13
     m_Colors:
-    - _DeepWaterColorDay: {r: 0.13830544, g: 0.44963238, b: 0.7924528, a: 0.8235294}
+    - _DeepWaterColorDay: {r: 0.096787095, g: 0.57236725, b: 0.8207547, a: 0.92156863}
     - _DeepWaterColorDusk: {r: 0.7830189, g: 0.3601505, b: 0.1662069, a: 0.8509804}
     - _DeepWaterColorNight: {r: 0.03426487, g: 0.059196983, b: 0.13207549, a: 1}
     - _Deep_Water_Color: {r: 0.13725491, g: 0.43137258, b: 0.50980395, a: 0.9607843}
