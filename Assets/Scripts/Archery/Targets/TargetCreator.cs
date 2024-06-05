@@ -8,10 +8,10 @@ public class TargetCreator : MonoBehaviour
     
     private void Start()
     {
-        ActivateRandomTargets(targetsCount);
+        Clear();
     }
 
-    private void ActivateRandomTargets(int count)
+    public void ActivateRandomTargets(int count)
     {
         if (count > targets.Count)
         {
@@ -41,6 +41,14 @@ public class TargetCreator : MonoBehaviour
             {
                 targets[i].gameObject.SetActive(false);
             }
+        }
+    }
+
+    public void Clear()
+    {
+        for (int i = 0; i < targets.Count; i++)
+        {
+            targets[i].gameObject.SetActive(false);
         }
     }
 }
