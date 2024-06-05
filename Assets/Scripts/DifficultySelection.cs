@@ -13,6 +13,7 @@ public class DifficultySelection : MonoBehaviour
     }
 
     [SerializeField] private GameObject difficultySelectionParent;
+    [SerializeField] private PlayerData playerData;
     [SerializeField] private Timer timer;
     [SerializeField] private Animator canvasAnimator;
     [SerializeField] private TargetCreator easyTargets, normalTargets, hardTargets;
@@ -20,6 +21,9 @@ public class DifficultySelection : MonoBehaviour
     
     public void OnSelectDifficulty(int difficulty)
     {
+        playerData.ResetScore();
+        timer.ResetTimer();
+        
         if (difficulty == 1)
         {
             StartCoroutine(DelayedGameStart(3.0f, easySettings));
@@ -34,11 +38,22 @@ public class DifficultySelection : MonoBehaviour
         }
     }
 
-    public void OnGameEnd()
+    public void OnGameEnd(bool win)
     {
+        timer.StopTimer();
         easyTargets?.Clear();
         normalTargets?.Clear();
         hardTargets?.Clear();
+        difficultySelectionParent.SetActive(true);
+
+        if (win)
+        {
+            canvasAnimator.SetTrigger("Win");
+        }
+        else
+        {
+            canvasAnimator.SetTrigger("GameOver");
+        }
     }
 
     private IEnumerator DelayedGameStart(float delay, DifficultySettings settings)

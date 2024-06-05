@@ -17,7 +17,7 @@ public class PlayerData : MonoBehaviour
         UpdateUI();
     }
 
-    private void IncrementScore()
+    public void IncrementScore()
     {
         currentTargetsCount++;
         UpdateUI();
@@ -26,6 +26,12 @@ public class PlayerData : MonoBehaviour
         {
             onWin.Invoke();
         }
+    }
+    
+    public void ResetScore()
+    {
+        currentTargetsCount = 0;
+        UpdateUI();
     }
 
     private void UpdateUI()

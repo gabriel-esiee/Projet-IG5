@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
 public class BowController : MonoBehaviour
@@ -12,6 +13,8 @@ public class BowController : MonoBehaviour
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMax = 0.3f;
     [SerializeField] private Vector3 arrowOffset;
 
+    public UnityEvent onHitFruit;
+    
     private Arrow arrow;
     private Transform hand = null;
     private Vector3 anchorPosition = new Vector3();
@@ -73,16 +76,17 @@ public class BowController : MonoBehaviour
         
         GameObject go = Instantiate(arrowPrefab);
         arrow = go.GetComponent<Arrow>();
-        arrow.OnCollide += OnArrowCollide;
+        arrow.OnCollide += OnArrowHitFruit;
         
         arrow.transform.parent = stringAnchor.transform.parent;
         arrow.transform.localPosition = arrowOffset;
         arrow.transform.localRotation = Quaternion.identity;
     }
 
-    private void OnArrowCollide(Transform other)
+    private void OnArrowHitFruit(Transform other)
     {
         Debug.Log("Arrow collide with " + other.name);
+        onHitFruit.Invoke();
     }
     
 }

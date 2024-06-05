@@ -30,6 +30,13 @@ public class Timer : MonoBehaviour
         started = false;
     }
 
+    public void ResetTimer()
+    {
+        started = false;
+        timer = timerDuration;
+        UpdateUI();
+    }
+
     private void Update()
     {
         if (started && timer > 0.0f)
