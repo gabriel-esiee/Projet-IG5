@@ -25,7 +25,8 @@ public class ButtonVR : MonoBehaviour
     {
         if (isPressed == false)
         {
-            button.transform.localPosition = pressedPosition;
+            //button.transform.position = pressedPosition;
+            button.SetActive(false);
             hand = other.transform;
             onPress.Invoke();
             audioSource.Play();
@@ -37,10 +38,10 @@ public class ButtonVR : MonoBehaviour
     {
         if (other.transform == hand && isPressed == true)
         {
-            button.transform.localPosition = releasedPosition;
+            //button.transform.position = releasedPosition;
+            button.SetActive(true);
             hand = null;
             onRelease.Invoke();
-            isPressed = false;
         }
     }
 

@@ -6,10 +6,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class BowController : MonoBehaviour
 {
-    [SerializeField] private Transform bow;
+    [SerializeField] private XRGrabInteractable bow;
     [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private LineRenderer stringRenderer;
-    [SerializeField] private XRGrabInteractable stringAnchor;
+    [Space, SerializeField] private XRGrabInteractable stringAnchor;
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMin = 0.14f;
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMax = 0.3f;
     [SerializeField] private Vector3 arrowOffset;
@@ -18,21 +18,24 @@ public class BowController : MonoBehaviour
     
     [Space] public UnityEvent onHitFruit;
     
-    private Arrow arrow;
-    private Transform hand = null;
+    private Arrow arrow = null;
+    private XRBaseController bowHand = null, stringHand = null;
     private Vector3 anchorPosition = new Vector3();
 
     private void Start()
     {
+        bow.selectEntered.AddListener(PullBow);
+        bow.selectExited.AddListener(ReleaseBow);
+
         stringAnchor.selectEntered.AddListener(PullString);
         stringAnchor.selectExited.AddListener(ReleaseString);
         
         Reload(0.0f);
     }
-    
+
     private void Update()
     {
-        if(hand != null)
+        if(stringHand != null)
         {
             anchorPosition = stringRenderer.transform.InverseTransformPoint(stringAnchor.transform.position);
             // Apply constraints to the string.
@@ -42,13 +45,24 @@ public class BowController : MonoBehaviour
 
             stringRenderer.SetPosition(1, anchorPosition);
             arrow.transform.localPosition = anchorPosition + arrowOffset;
+
+            float strength = Mathf.Clamp01((Mathf.Abs(anchorPosition.z) - stringStretchMin) / stringStretchMax);
+
+            SetControllerHaptic(stringHand, strength * 0.6f);
+            SetControllerHaptic(bowHand, strength * 0.1f);
         }
     }
-    
+
+    private void PullString(SelectEnterEventArgs arg0)
+    {
+        stringHand = arg0.interactorObject.transform.GetComponent<XRBaseController>();
+
+        AudioClip clip = drawAudioClips[Random.Range(0, drawAudioClips.Count)];
+        drawAudioSource.PlayOneShot(clip);
+    }
+
     public void ReleaseString(SelectExitEventArgs arg0)
     {
-        hand = null;
-        
         float strength = Mathf.Clamp01((Mathf.Abs(stringAnchor.transform.localPosition.z) - stringStretchMin) / stringStretchMax);
         Debug.Log("Throwing arrow with strength of " + strength.ToString());
 
@@ -58,19 +72,24 @@ public class BowController : MonoBehaviour
 
         arrow.transform.parent = null;
         arrow.Release(strength);
-        
-        Reload(1.0f);
-    }
-    
-    private void PullString(SelectEnterEventArgs arg0)
-    {
-        Debug.Log("Pulling bow string.");
-        hand = arg0.interactorObject.transform;
 
-        AudioClip clip = drawAudioClips[Random.Range(0, drawAudioClips.Count)];
-        drawAudioSource.PlayOneShot(clip);
+        SetControllerHaptic(stringHand, 0.0f);
+        stringHand = null;
+        SetControllerHaptic(bowHand, 1.0f, 0.3f);
+
+        Reload(0.2f);
     }
-    
+
+    private void PullBow(SelectEnterEventArgs arg0)
+    {
+        bowHand = arg0.interactorObject.transform.GetComponent<XRBaseController>();
+    }
+
+    private void ReleaseBow(SelectExitEventArgs arg0)
+    {
+        bowHand = null;
+    }
+
     private void Reload(float delay)
     {
         StartCoroutine(ReloadCouroutine(delay));
@@ -82,14 +101,14 @@ public class BowController : MonoBehaviour
         
         GameObject go = Instantiate(arrowPrefab);
         arrow = go.GetComponent<Arrow>();
-        arrow.OnCollide += OnArrowHitFruit;
+        arrow.OnCollide += OnArrowHitFruitEvent;
         
         arrow.transform.parent = stringAnchor.transform.parent;
         arrow.transform.localPosition = arrowOffset;
         arrow.transform.localRotation = Quaternion.identity;
     }
 
-    private void OnArrowHitFruit(Transform other)
+    private void OnArrowHitFruitEvent(Transform other)
     {
         Debug.Log("Arrow hit " + other.name);
         
@@ -98,5 +117,10 @@ public class BowController : MonoBehaviour
         
         onHitFruit.Invoke();
     }
-    
+
+    private void SetControllerHaptic(XRBaseController controller, float intensity, float duration = 0.16f)
+    {
+        controller?.SendHapticImpulse(intensity, duration);
+    }
+
 }
