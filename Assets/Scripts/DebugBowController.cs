@@ -28,8 +28,11 @@ public class DebugBowController : MonoBehaviour
         }
     }
 
-    public void OnArrowHitFruit(Transform fruit)
+    public void OnArrowHitFruit(Transform other)
     {
+        TargetAnimation anim = other.GetComponent<TargetAnimation>();
+        anim?.TriggerDestroyAnimation();
+        
         onHitFruit.Invoke();
     }
 }

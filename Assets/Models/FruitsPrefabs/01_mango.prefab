@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1144245245299617516}
   - component: {fileID: 2883952707307280934}
   - component: {fileID: 7388006850963601426}
+  - component: {fileID: -6330204119401568965}
   m_Layer: 0
   m_Name: 01_mango
   m_TagString: Target
@@ -106,3 +107,15 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5419220214346182899, guid: 2730fd631b34edd46988875d4c19c71a, type: 3}
+--- !u!114 &-6330204119401568965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3676388398596897779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e69ab3555a13e1479c543a409ec11fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

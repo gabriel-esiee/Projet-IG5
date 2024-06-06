@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -12,13 +13,15 @@ public class BowController : MonoBehaviour
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMin = 0.14f;
     [Space, Range(0.0f, 1.0f), SerializeField] private float stringStretchMax = 0.3f;
     [SerializeField] private Vector3 arrowOffset;
-
-    public UnityEvent onHitFruit;
+    [Space, SerializeField] private AudioSource drawAudioSource;
+    [SerializeField] private List<AudioClip> drawAudioClips = new List<AudioClip>();
+    
+    [Space] public UnityEvent onHitFruit;
     
     private Arrow arrow;
     private Transform hand = null;
     private Vector3 anchorPosition = new Vector3();
-    
+
     private void Start()
     {
         stringAnchor.selectEntered.AddListener(PullString);
@@ -63,6 +66,9 @@ public class BowController : MonoBehaviour
     {
         Debug.Log("Pulling bow string.");
         hand = arg0.interactorObject.transform;
+
+        AudioClip clip = drawAudioClips[Random.Range(0, drawAudioClips.Count)];
+        drawAudioSource.PlayOneShot(clip);
     }
     
     private void Reload(float delay)
@@ -85,7 +91,11 @@ public class BowController : MonoBehaviour
 
     private void OnArrowHitFruit(Transform other)
     {
-        Debug.Log("Arrow collide with " + other.name);
+        Debug.Log("Arrow hit " + other.name);
+        
+        TargetAnimation anim = other.GetComponent<TargetAnimation>();
+        anim?.TriggerDestroyAnimation();
+        
         onHitFruit.Invoke();
     }
     

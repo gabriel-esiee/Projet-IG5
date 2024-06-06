@@ -78,8 +78,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: 66_pumpkin
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: a975e30209db0cf4aaea7704c00e2997,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a975e30209db0cf4aaea7704c00e2997,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5404935250737576813}
   m_SourcePrefab: {fileID: 100100000, guid: a975e30209db0cf4aaea7704c00e2997, type: 3}
+--- !u!1 &4868253074560786046 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a975e30209db0cf4aaea7704c00e2997,
+    type: 3}
+  m_PrefabInstance: {fileID: 5714764123526079279}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5404935250737576813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4868253074560786046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e69ab3555a13e1479c543a409ec11fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
