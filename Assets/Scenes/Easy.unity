@@ -6741,7 +6741,7 @@ TextMesh:
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 341
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color:
@@ -7743,7 +7743,7 @@ TextMesh:
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 341
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color:
@@ -8080,7 +8080,7 @@ TextMesh:
   m_Alignment: 0
   m_TabSize: 4
   m_FontSize: 341
-  m_FontStyle: 0
+  m_FontStyle: 1
   m_RichText: 1
   m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
   m_Color:
@@ -14262,6 +14262,26 @@ PrefabInstance:
       propertyPath: onHitFruit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1615927866}
+    - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7232855367049617815, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14316,6 +14336,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Debug Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 7263129610738417454, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15225,6 +15270,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VR Archery Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627380989341084164, guid: da61c55575d67c440a9aba84d54a9e33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6002116653730630212, guid: da61c55575d67c440a9aba84d54a9e33,
+        type: 3}
+      propertyPath: m_fontStyle
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6167273588694262955, guid: da61c55575d67c440a9aba84d54a9e33,
         type: 3}
