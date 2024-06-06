@@ -10,6 +10,8 @@ public class Timer : MonoBehaviour
     [Space, SerializeField] private TMP_Text timerText;
     
     [Space] public UnityEvent onTimerEnd;
+    public AudioSource winLooseAudioSource;
+    public AudioClip looseAudioClip;
 
     private bool started = false;
     private float timer;
@@ -46,6 +48,8 @@ public class Timer : MonoBehaviour
             if (timer <= 0.0f)
             {
                 timer = 0.0f;
+                winLooseAudioSource.clip = looseAudioClip;
+                winLooseAudioSource.Play();
                 onTimerEnd.Invoke();
             }
             

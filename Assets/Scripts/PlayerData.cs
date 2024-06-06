@@ -11,7 +11,7 @@ public class PlayerData : MonoBehaviour
     [Space, SerializeField] private TMP_Text scoreText;
     public AudioSource winLooseAudioSource;
     public AudioClip winAudioClip;
-    public AudioClip looseAudioClip;
+    
 
     public UnityEvent onWin;
 

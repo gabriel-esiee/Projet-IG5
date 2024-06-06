@@ -24,7 +24,7 @@ public class TargetAnimation : MonoBehaviour
         }
 
         transform.localScale = targetScale;
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
     
     private static float EaseInBounce(float start, float end, float value)
