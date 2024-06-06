@@ -257,9 +257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_InteractionManager: {fileID: 0}
+  m_InteractionManager: {fileID: 58883031}
   m_Colliders:
-  - {fileID: 0}
+  - {fileID: 2200386}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -10151,22 +10151,22 @@ PrefabInstance:
     - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 3132691864901232937, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 7232855367049617815, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
@@ -10223,25 +10223,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Debug Controller
       objectReference: {fileID: 0}
+    - target: {fileID: 7263129610738417454, guid: d7248f5fc1a5c2440aa833cdb082465d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 163.339
       objectReference: {fileID: 0}
     - target: {fileID: 8407761370813450832, guid: d7248f5fc1a5c2440aa833cdb082465d,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -110
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11035,12 +11040,12 @@ PrefabInstance:
     - target: {fileID: 2678826411361791617, guid: da61c55575d67c440a9aba84d54a9e33,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.6
       objectReference: {fileID: 0}
     - target: {fileID: 2678826411361791617, guid: da61c55575d67c440a9aba84d54a9e33,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.228
       objectReference: {fileID: 0}
     - target: {fileID: 2678826411361791617, guid: da61c55575d67c440a9aba84d54a9e33,
         type: 3}
@@ -11077,6 +11082,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2918527603873138332, guid: da61c55575d67c440a9aba84d54a9e33,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.672
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918527603873138332, guid: da61c55575d67c440a9aba84d54a9e33,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.172
+      objectReference: {fileID: 0}
+    - target: {fileID: 2918527603873138332, guid: da61c55575d67c440a9aba84d54a9e33,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.751
+      objectReference: {fileID: 0}
     - target: {fileID: 3943015472636404616, guid: da61c55575d67c440a9aba84d54a9e33,
         type: 3}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
@@ -11086,6 +11106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VR Archery Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 5627380989341084164, guid: da61c55575d67c440a9aba84d54a9e33,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
