@@ -1,4 +1,4 @@
-# Projzt IG5
+# Project IG5
 
 Shield: [![CC BY-NC-ND 4.0][cc-by-nc-nd-shield]][cc-by-nc-nd]
 
